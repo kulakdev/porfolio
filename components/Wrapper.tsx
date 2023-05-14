@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile";
-import LinkIcon from "./LinkIcon";
 import PageTitle from "./PageTitle";
 
 const Header = ({ title }: { title: string }) => {

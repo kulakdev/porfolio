@@ -1,10 +1,10 @@
 import { HStack, Image } from "@chakra-ui/react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+
+// import { useRouter } from "next/router";
 import React from "react";
 
 const HeaderDesktop = () => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div className="hidden lg:block">
       <header className="flex text-white-soft p-4 mx-auto lg:max-w-5xl  fixed md:relative md:flex md:justify-between md:items-center md:text-center">

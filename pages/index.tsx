@@ -4,8 +4,8 @@ import Wrapper from "../components/Wrapper";
 
 const Index: NextPage = () => {
   return (
-    <Wrapper title="Robert Chen - Software Developer" hasFooter={false}>
-      <div>Home</div>
+    <Wrapper title="al;khjf">
+      <div></div>
     </Wrapper>
   );
 };
