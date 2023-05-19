@@ -4,6 +4,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import ArrowUpButton from "../components/ArrowUpButton";
 import ProjectCard from "../components/ProjectCard";
 import Wrapper from "../components/Wrapper";
+import { images, FirstRow } from "../config/config";
 
 const Index: NextPage = () => {
   const MyComponent = () => {
@@ -32,9 +33,9 @@ const Index: NextPage = () => {
       <div className="w-full h-[calc(100vh-212px)] flex flex-col justify-between">
         <div style={dotsStyle} className="grow">
           <div className="mt-[52px] mx-[52px] flex flex-row justify-between">
-            <ProjectCard link="https://images.unsplash.com/photo-1673720436284-a0af6c6e28cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
-            <ProjectCard link="https://images.unsplash.com/photo-1674168531636-f44ecced6e13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
-            <ProjectCard link="https://images.unsplash.com/photo-1673212815620-62e1f1824a5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+            {images.map((image: FirstRow, index: number) => (
+              <ProjectCard key={index} link={image.picture} />
+            ))}
           </div>
           <div className=" mt-[51px] mx-[52px] flex flex-row justify-between">
             <ProjectCard link="https://images.unsplash.com/photo-1675438321407-b458c45a71d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
