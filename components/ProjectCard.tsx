@@ -4,7 +4,7 @@ import React, { CSSProperties } from "react";
 const ProjectCard = ({ link, className }: { link: string; className?: string }) => {
   const imageStyle: CSSProperties = { objectFit: "cover" };
 
-  const ImportStyles = "bg-grey-soft w-[400px] h-[275px] relative overflow-hidden " + className;
+  const ImportStyles = "bg-grey-soft w-[350px] h-[250px] relative overflow-hidden " + className;
   console.log("className", className);
   console.log("importstyles", ImportStyles);
 
