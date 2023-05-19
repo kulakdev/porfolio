@@ -4,7 +4,7 @@
 const nextConfig = {
   /* config options here */
   images: {
-    domains: ["placekitten.com"],
+    domains: ["placekitten.com", "images.unsplash.com"],
   },
 };
 

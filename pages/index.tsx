@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import { NextPage } from "next";
 import Image from "next/image";
 import React, { useLayoutEffect, useRef } from "react";
@@ -26,13 +25,24 @@ const Index: NextPage = () => {
     backgroundPosition: "-35px -35px",
   };
 
+  const imageStyle: { objectFit: string } = { objectFit: "cover" };
+
   return (
     <Wrapper title="">
       <MyComponent />
       <div className="w-full h-[calc(100vh-212px)] flex flex-col justify-between">
         <div style={dotsStyle} className="grow">
           <div className="mt-[27px] ml-[2px] flex flex-row justify-between">
-            <div className=" bg-grey-soft w-[400px] h-[275px]"></div>
+            <div className=" bg-grey-soft w-[400px] h-[275px] relative overflow-hidden">
+              <Image
+                src={
+                  "https://images.unsplash.com/photo-1673720436284-a0af6c6e28cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                }
+                alt="text"
+                fill={true}
+                style={imageStyle}
+              ></Image>
+            </div>
             <div className=" bg-grey-soft w-[400px] h-[275px]"></div>
             <div className=" bg-grey-soft w-[400px] h-[275px] mr-[2px]"></div>
           </div>
