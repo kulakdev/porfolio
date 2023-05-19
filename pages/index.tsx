@@ -8,9 +8,9 @@ import Wrapper from "../components/Wrapper";
 const Index: NextPage = () => {
   const MyComponent = () => {
     const ref = useRef<HTMLHeadingElement>(null);
-    useLayoutEffect(() => {
-      console.log("width", ref.current ? ref.current.offsetWidth : 0);
-    }, []);
+    // useLayoutEffect(() => {
+    //   console.log("width", ref.current ? ref.current.offsetWidth : 0);
+    // }, []);
     return <div ref={ref}></div>;
   };
 
@@ -32,9 +32,12 @@ const Index: NextPage = () => {
       <div className="w-full h-[calc(100vh-212px)] flex flex-col justify-between">
         <div style={dotsStyle} className="grow">
           <div className="mt-[27px] ml-[2px] flex flex-row justify-between">
-            <ProjectCard imagelink="https://images.unsplash.com/photo-1673720436284-a0af6c6e28cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
-            <div className=" bg-grey-soft w-[400px] h-[275px]"></div>
-            <div className=" bg-grey-soft w-[400px] h-[275px] mr-[2px]"></div>
+            <ProjectCard link="https://images.unsplash.com/photo-1673720436284-a0af6c6e28cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
+            <ProjectCard link="https://images.unsplash.com/photo-1674168531636-f44ecced6e13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
+            <ProjectCard
+              link="https://images.unsplash.com/photo-1673212815620-62e1f1824a5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+              className="mr-[2px]"
+            />
           </div>
           <div className="mt-[25px] ml-[2px] flex flex-row justify-between">
             <div className=" bg-grey-soft w-[400px] h-[275px] "></div>
