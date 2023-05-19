@@ -40,9 +40,9 @@ const Index: NextPage = () => {
             />
           </div>
           <div className="mt-[25px] ml-[2px] flex flex-row justify-between">
-            <div className=" bg-grey-soft w-[400px] h-[275px] "></div>
-            <div className=" bg-grey-soft w-[400px] h-[275px]"></div>
-            <div className=" bg-grey-soft w-[400px] h-[275px] mr-[2px]"></div>
+            <ProjectCard link="https://images.unsplash.com/photo-1675438321407-b458c45a71d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+            <ProjectCard link="https://images.unsplash.com/photo-1673212815531-42b55a640de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+            <ProjectCard link="https://images.unsplash.com/photo-1674948839064-3686a14e72e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" />
           </div>
         </div>
         <div className="flex flex-row justify-between mb-[100px] mt-[75px]">
