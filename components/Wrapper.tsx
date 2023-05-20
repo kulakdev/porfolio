@@ -3,12 +3,11 @@ import Link from "next/link";
 import React from "react";
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile";
-import PageTitle from "./PageTitle";
 
 const Header = ({ title }: { title: string }) => {
   return (
     <>
-      <HeaderDesktop />
+      <HeaderDesktop title={title} />
       <HeaderMobile title={title} />
     </>
   );
@@ -53,7 +52,6 @@ const Wrapper = ({
       <div>
         <Header title={title} />
         <main className="font-serif p-4 lg:p-0 lg:max-w-[1254px] lg:mx-auto w-full h-full">
-          {title && <PageTitle title={title} />}
           {children}
         </main>
       </div>
