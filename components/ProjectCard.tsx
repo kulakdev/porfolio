@@ -10,7 +10,13 @@ const ProjectCard = ({ image, className }: { image: string; className?: string }
 
   return (
     <div className={ImportStyles}>
-      <Image src={image} alt="text" fill={true} style={imageStyle}></Image>
+      <Image
+        onDragStart={(event) => event.preventDefault()}
+        src={image}
+        alt="text"
+        fill={true}
+        style={imageStyle}
+      ></Image>
     </div>
   );
 };
