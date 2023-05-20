@@ -34,12 +34,12 @@ const Index: NextPage = () => {
         <div style={dotsStyle} className="grow">
           <div className="mt-[52px] mx-[52px] flex flex-row justify-between">
             {firstRow.map((image: CardTypes, index: number) => (
-              <ProjectCard key={index} image={image.picture} />
+              <ProjectCard key={index} link={image.link} image={image.picture} />
             ))}
           </div>
           <div className=" mt-[51px] mx-[52px] flex flex-row justify-between">
             {secondRow.map((image: CardTypes, index: number) => (
-              <ProjectCard key={index} image={image.picture} />
+              <ProjectCard key={index} link={image.link} image={image.picture} />
             ))}
           </div>
         </div>
