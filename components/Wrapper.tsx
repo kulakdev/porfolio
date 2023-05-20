@@ -3,12 +3,11 @@ import Link from "next/link";
 import React from "react";
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile";
-import PageTitle from "./PageTitle";
 
 const Header = ({ title }: { title: string }) => {
   return (
     <>
-      <HeaderDesktop />
+      <HeaderDesktop title={title} />
       <HeaderMobile title={title} />
     </>
   );
@@ -26,11 +25,11 @@ const Footer = () => {
                 <LinkIcon key={index} icon={icon.icon} link={icon.link} />
               ))} */}
             </HStack>
-            <div>© 2018-{new Date().getFullYear()} Eddie van der Meer</div>
+            <div>© 2018-{new Date().getFullYear()} Constantine Kulak</div>
             <div>
-              <Link className="text-gold" href="/privacy-policy">
+              {/* <Link className="text-gold" href="/privacy-policy">
                 Privacy Policy
-              </Link>
+              </Link> */}
             </div>
           </div>
         </VStack>
@@ -52,8 +51,7 @@ const Wrapper = ({
     <div className="bg-black-soft text-white-soft flex flex-col h-screen justify-between">
       <div>
         <Header title={title} />
-        <main className="font-serif p-4 lg:p-0 lg:max-w-4xl lg:mx-auto w-full h-full">
-          {title && <PageTitle title={title} />}
+        <main className="font-serif p-4 lg:p-0 lg:max-w-[1254px] lg:mx-auto w-full h-full">
           {children}
         </main>
       </div>
