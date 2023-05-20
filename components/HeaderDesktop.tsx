@@ -2,13 +2,14 @@ import { HStack, Image, Icon } from "@chakra-ui/react";
 import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 // import { useRouter } from "next/router";
 import React, { useEffect, useRef } from "react";
+import PageTitle from "./PageTitle";
 
-const HeaderDesktop = () => {
+const HeaderDesktop = ({ title }) => {
   // const router = useRouter();
   return (
     <div className="hidden lg:block">
       <header className="flex bg-[transparent] mt-[100px] text-white-soft p-4 mx-auto lg:max-w-[1250px]  fixed md:relative md:flex md:justify-between md:items-center md:text-center">
-        <h1 className="font-[Epilogue] font-bold text-[64px]">projects</h1>
+        <h1 className="font-[Epilogue] font-bold text-[64px]">{title}</h1>
 
         <HStack>
           <a>
