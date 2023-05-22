@@ -18,5 +18,6 @@
   "eslint.enable": true,
   "eslint.debug": true,
   "eslint.run": "onType",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.colorTheme": "Electronic Moonlight"
 }

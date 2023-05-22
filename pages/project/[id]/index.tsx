@@ -7,7 +7,8 @@ const Gear = ({ gearData }: { gearData: GearItem }) => {
   return (
     <Wrapper title="Gear">
       <div className="flex justify-center">
-        <div>deeznuts</div>
+        <h1>{gearData.name}</h1>
+        <span>{gearData.title}</span>
       </div>
     </Wrapper>
   );

@@ -1,5 +1,7 @@
 ---
-name: "Audio"
+name: "evdm"
+title: "Eddie van der Meer's personal website"
+tech: ""
 sections:
   [
     {
