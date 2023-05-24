@@ -1,7 +1,7 @@
 import React from "react";
-import Wrapper from "../../../components/Wrapper";
-import { getAllGearIds, getGearData } from "../../../lib/gear";
-import { GearItem } from "../../../types/dynamic/gear";
+import Wrapper from "../../components/Wrapper";
+import { getAllGearIds, getGearData } from "../../lib/gear";
+import { GearItem } from "../../types/dynamic/gear";
 
 const Gear = ({ gearData }: { gearData: GearItem }) => {
   return (

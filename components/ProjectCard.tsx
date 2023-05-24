@@ -22,6 +22,7 @@ const ProjectCard = ({
       <Image
         onDragStart={(event) => event.preventDefault()}
         src={image}
+        quality={10}
         alt="text"
         fill={true}
         style={imageStyle}
