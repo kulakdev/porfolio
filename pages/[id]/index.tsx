@@ -8,16 +8,14 @@ const Gear = ({ gearData }: { gearData: GearItem }) => {
   return (
     <Wrapper title={gearData.title}>
       <div className="flex flex-col justify-start w-[1250px]">
-        <div className="font-[Epilogue] font-bold text-[20px]">{gearData.discipline}</div>
-        <div className="font-[Ledger] text-[16px]">{gearData.description}</div>
-        <div className="w-[1250px] h-[50px]">
-          <div className="flex flex-col [&>span]:font-bold">
+        {/* <div className="font-[Epilogue] font-bold text-[20px]">{gearData.discipline}</div> */}
+        <div className="font-[Ledger] text-[16px] mt-9">{gearData.description}</div>
+        <div className="w-[1250px] h-[50px] pt-9 flex justify-between">
+          <div className="flex flex-col [&>span]:font-bold [&>span]:font-[Epilogue] [&>span]:text-[20px] font-[Ledger] text-[16px]">
             <span>Tech Used</span>
             {gearData.tech}
           </div>
-          <ButtonNormal text="forward"></ButtonNormal>
-          <div></div>
-          <div></div>
+          <ButtonNormal text="deployment"></ButtonNormal>
         </div>
       </div>
     </Wrapper>
