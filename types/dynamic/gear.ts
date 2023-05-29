@@ -23,5 +23,6 @@ export type GearItem = {
   tech: string;
   forward: string;
   id: string;
+  images: string[];
   sections?: Section[];
 };
