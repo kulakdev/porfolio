@@ -1,7 +1,12 @@
 ---
 name: "evdm"
-title: "Eddie van der Meer's personal website"
-tech: ""
+title: "Eddie van der Meer"
+discipline: "Web development"
+description: "I had the pleasure of improving Eddie's website by leveraging React and Next.js for front-end development. My contributions focused on enhancing usability, responsiveness, and deployment on the cloud. Through this project, I gained valuable experience in creating dynamically generated pages, working with Git, and ultimately delivering a seamless browsing experience to Eddie's audience."
+year: "2023"
+role: "Developer"
+tech: "NextJS, React, TypeScript, ChakraUI, Tailwind"
+forward: "https://eddievdmeer.com/"
 sections:
   [
     {

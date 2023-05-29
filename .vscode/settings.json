@@ -19,5 +19,5 @@
   "eslint.debug": true,
   "eslint.run": "onType",
   "typescript.tsdk": "node_modules/typescript/lib",
-  "workbench.colorTheme": "Electronic Moonlight"
+  "workbench.colorTheme": "Party Owl '84"
 }

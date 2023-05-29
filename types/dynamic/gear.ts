@@ -16,7 +16,12 @@ export type Section = {
 export type GearItem = {
   name: string;
   title: string;
+  discipline: string;
+  description: string;
+  year: string;
+  role: string;
   tech: string;
+  forward: string;
   id: string;
   sections?: Section[];
 };
