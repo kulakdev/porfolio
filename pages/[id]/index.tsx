@@ -15,7 +15,7 @@ const Gear = ({ gearData }: { gearData: GearItem }) => {
             <span>Tech Used</span>
             {gearData.tech}
           </div>
-          <ButtonNormal text="hello"></ButtonNormal>
+          <ButtonNormal text="forward"></ButtonNormal>
           <div></div>
           <div></div>
         </div>
