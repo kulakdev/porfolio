@@ -42,7 +42,15 @@ const Gear = ({ gearData }: { gearData: GearItem }) => {
         >
           <HStack>
             {gearData.images.map((image: string, id: number) => (
-              <Image alt="projects" src={image} key={id} width={320} height={180}></Image>
+              <Image
+                alt="projects"
+                src={image}
+                key={id}
+                width={320}
+                height={180}
+                onDragStart={(event) => event.preventDefault()}
+                onClick={(event) => event.preventDefault}
+              ></Image>
             ))}
           </HStack>
         </div>
