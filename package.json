@@ -40,7 +40,8 @@
     "react-lite-yt-embed": "^1.2.7",
     "react-svg": "^16.1.6",
     "react-virtuoso": "^4.1.0",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "yet-another-react-lightbox": "^3.10.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.3.0",

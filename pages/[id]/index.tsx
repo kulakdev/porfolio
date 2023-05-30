@@ -6,7 +6,13 @@ import Wrapper from "../../components/Wrapper";
 import { getAllGearIds, getGearData } from "../../lib/gear";
 import { GearItem } from "../../types/dynamic/gear";
 
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 const Gear = ({ gearData }: { gearData: GearItem }) => {
+  const [open, setOpen] = React.useState(false);
+  const [currentImage, setCurrentImage] = React.useState(0);
+
   return (
     <Wrapper title={gearData.title}>
       <div className="flex flex-col justify-start w-[1250px]">
@@ -49,10 +55,24 @@ const Gear = ({ gearData }: { gearData: GearItem }) => {
                 width={320}
                 height={180}
                 onDragStart={(event) => event.preventDefault()}
-                onClick={(event) => event.preventDefault}
+                onClick={() => {
+                  setOpen(true), setCurrentImage(id);
+                }}
               ></Image>
             ))}
           </HStack>
+          <Lightbox
+            open={open}
+            close={() => setOpen(false)}
+            index={currentImage}
+            slides={[
+              { src: "/img/evdmscreenshot0.png" },
+              { src: "/img/evdmscreenshot1.png" },
+              { src: "/img/evdmscreenshot2.png" },
+              { src: "/img/evdmscreenshot3.png" },
+              { src: "/img/evdmscreenshot4.png" },
+            ]}
+          ></Lightbox>
         </div>
       </div>
     </Wrapper>
