@@ -7,7 +7,10 @@ import { getAllGearIds, getGearData } from "../../lib/gear";
 import { GearItem } from "../../types/dynamic/gear";
 
 import Lightbox from "yet-another-react-lightbox";
+import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/counter.css";
+import NextJsImage from "../../components/NextJsImage";
 
 const Gear = ({ gearData }: { gearData: GearItem }) => {
   const [open, setOpen] = React.useState(false);
@@ -72,6 +75,18 @@ const Gear = ({ gearData }: { gearData: GearItem }) => {
               { src: "/img/evdmscreenshot3.png" },
               { src: "/img/evdmscreenshot4.png" },
             ]}
+            render={{ slide: NextJsImage }}
+            plugins={[Counter]}
+            counter={{
+              container: {
+                style: {
+                  top: 0,
+                  bottom: "unset",
+                  left: "auto",
+                  right: "auto",
+                },
+              },
+            }}
           ></Lightbox>
         </div>
       </div>
