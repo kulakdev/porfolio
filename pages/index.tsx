@@ -29,7 +29,6 @@ const Index: NextPage = () => {
 
   return (
     <Wrapper title="my projects">
-      <MyComponent />
       <div className="w-full h-[calc(100vh-212px)] flex flex-col ">
         <div style={dotsStyle} className="pb-[50px] mt-auto">
           <div className="mt-[52px] mx-[52px] flex flex-row justify-between">

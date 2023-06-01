@@ -11,6 +11,8 @@ import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import NextJsImage from "../../components/NextJsImage";
+import Lottie from "lottie-react";
+import arrow from "../../public/arrow1.json";
 
 const Gear = ({ gearData }: { gearData: GearItem }) => {
   const [open, setOpen] = React.useState(false);
@@ -89,6 +91,7 @@ const Gear = ({ gearData }: { gearData: GearItem }) => {
             }}
           ></Lightbox>
         </div>
+        <Lottie animationData={arrow} className="w-10 h-auto self-end"></Lottie>
       </div>
     </Wrapper>
   );
