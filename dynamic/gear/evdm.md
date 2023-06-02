@@ -14,6 +14,11 @@ images:
     "/img/evdmscreenshot2.png",
     "/img/evdmscreenshot3.png",
     "/img/evdmscreenshot4.png",
+    "/img/evdmscreenshot0.png",
+    "/img/evdmscreenshot1.png",
+    "/img/evdmscreenshot2.png",
+    "/img/evdmscreenshot3.png",
+    "/img/evdmscreenshot4.png",
   ]
 sections:
   [
