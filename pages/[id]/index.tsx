@@ -64,31 +64,31 @@ const Gear = ({ gearData }: { gearData: GearItem }) => {
               ></Image>
             ))}
           </HStack>
-          <Lightbox
-            open={open}
-            close={() => setOpen(false)}
-            index={currentImage}
-            slides={[
-              { src: "/img/evdmscreenshot0.png" },
-              { src: "/img/evdmscreenshot1.png" },
-              { src: "/img/evdmscreenshot2.png" },
-              { src: "/img/evdmscreenshot3.png" },
-              { src: "/img/evdmscreenshot4.png" },
-            ]}
-            render={{ slide: NextJsImage }}
-            plugins={[Counter]}
-            counter={{
-              container: {
-                style: {
-                  top: 0,
-                  bottom: "unset",
-                  left: "auto",
-                  right: "auto",
-                },
-              },
-            }}
-          ></Lightbox>
         </div>
+        <Lightbox
+          open={open}
+          close={() => setOpen(false)}
+          index={currentImage}
+          slides={[
+            { src: "/img/evdmscreenshot0.png" },
+            { src: "/img/evdmscreenshot1.png" },
+            { src: "/img/evdmscreenshot2.png" },
+            { src: "/img/evdmscreenshot3.png" },
+            { src: "/img/evdmscreenshot4.png" },
+          ]}
+          render={{ slide: NextJsImage }}
+          plugins={[Counter]}
+          counter={{
+            container: {
+              style: {
+                top: 0,
+                bottom: "unset",
+                left: "auto",
+                right: "auto",
+              },
+            },
+          }}
+        ></Lightbox>
       </div>
     </Wrapper>
   );
