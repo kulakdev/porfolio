@@ -1,24 +1,23 @@
 ---
 name: "evdm"
-title: "Eddie van der Meer inc."
+title: "Pepega"
 discipline: "Web development"
-description: "I had the pleasure of improving Eddie's website by leveraging React and Next.js for front-end development. My contributions focused on enhancing usability, responsiveness, and deployment on the cloud. Through this project, I gained valuable experience in creating dynamically generated pages, working with Git, and ultimately delivering a seamless browsing experience to Eddie's audience."
+description: "This is driving me insane. Get out of my head Get out of my head  Get out of my head Get out of my head  Get out of my head Get out of my head  Get out of my head Get out of my head  Get out of my head Get out of my head  Get out of my head Get out of my head "
 year: "2023"
 role: "Developer"
 tech: "NextJS, React, TypeScript, ChakraUI, Tailwind"
 forward: "https://eddievdmeer.com/"
 images:
   [
-    "/img/evdmscreenshot0.png",
-    "/img/evdmscreenshot1.png",
-    "/img/evdmscreenshot2.png",
-    "/img/evdmscreenshot3.png",
-    "/img/evdmscreenshot4.png",
-    "/img/evdmscreenshot0.png",
-    "/img/evdmscreenshot1.png",
-    "/img/evdmscreenshot2.png",
-    "/img/evdmscreenshot3.png",
-    "/img/evdmscreenshot4.png",
+    "/img/image1.jpeg",
+    "/img/image2.jpeg",
+    "/img/image3.jpeg",
+    "/img/image1.jpeg",
+    "/img/image2.jpeg",
+    "/img/image3.jpeg",
+    "/img/image1.jpeg",
+    "/img/image2.jpeg",
+    "/img/image3.jpeg",
   ]
 sections:
   [
